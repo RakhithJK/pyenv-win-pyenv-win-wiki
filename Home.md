@@ -105,5 +105,3 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 By default PowerShell forbids to run any script file (`.ps1`) due to ***Default*** Execution Policy. You can change it on less restricted policy at any time.
 
 Reed more about policy types and scopes on [Microsoft Documentation](https://go.microsoft.com/fwlink/?LinkID=135170) website.
-
-
