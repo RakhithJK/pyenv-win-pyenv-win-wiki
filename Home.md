@@ -10,12 +10,12 @@ To install pyenv-win, please refer to the [Readme](https://github.com/pyenv-win/
 
 1. Check that `pyenv` is in your PATH:
 
-    ```powershell
+    ```pwsh
     where.exe pyenv
     ```
 
     Two rows are displayed *(for your user)*:
-    
+
     ```bash
     C:\Users\username\.pyenv\pyenv-win\bin\pyenv
     C:\Users\username\.pyenv\pyenv-win\bin\pyenv.bat
@@ -25,12 +25,12 @@ To install pyenv-win, please refer to the [Readme](https://github.com/pyenv-win/
 
 2. Check that `python` is in your PATH:
 
-    ```powershell
+    ```pwsh
     where.exe python
     ```
 
     Both **pyenv-win**'s rows at the top of command's output.
-    If not, see [Configure the order of PATH variable](#configure-the-order-of-path-variable) below.
+    If not, see [Configure the order of PATH variable](#configure-the-order-in-path-variable) below.
 
 ### Configure the order in PATH variable
 
@@ -39,7 +39,7 @@ To install pyenv-win, please refer to the [Readme](https://github.com/pyenv-win/
       - Open ***Advanced System Properties***:
       - Win + R and run `systempropertiesadvanced`
       - Click on ***Environment Variables..***. button
-      - Select **Path** in _User variables_ table and click on **Edit...** button
+      - Select **Path** in **User variables** table and click on **Edit...** button
       - Find and select two pyenv-win's rows and move them up clicking **Move Up** button (each row you have to move separately)
       - Click **OK** button twice and RESTART (open new) shell terminal window (terminal).
 
@@ -65,7 +65,7 @@ When you set up **pyenv-win** you add two records (paths) at the top of User PAT
 
 <a id="ps-user-path"></a>
 
-```powershell
+```pwsh
 [System.Environment]::SetEnvironmentVariable('path', $env:USERPROFILE + "\.pyenv\pyenv-win\bin;" + $env:USERPROFILE + "\.pyenv\pyenv-win\shims;" + [System.Environment]::GetEnvironmentVariable('path', "User"),"User")
 ```
 
@@ -80,7 +80,7 @@ because running scripts is disabled on this system ...*":
 
 To fix it, run following command in PowerShell and type 'Yes' for its confirmation.
 
-```powershell
+```pwsh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
