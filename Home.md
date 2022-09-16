@@ -87,3 +87,29 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 By default PowerShell forbids to run any script file (`.ps1`) due to ***Default*** Execution Policy. You can change it on less restricted one at any time. Reed more about policy types and scopes on [Microsoft Documentation](https://go.microsoft.com/fwlink/?LinkID=135170) website.
+
+### Does pyenv-win support python2 ?
+
+Yes, We support python2 from version 2.4+ until python.org officially removes it.
+
+Versions below 2.4 use outdated Wise installers and have issues installing multiple patch versions, unlike Windows MSI and the new Python3 installers that support "extraction" installations.
+
+### Does pyenv for windows support python3 ?
+
+Yes, we support python3 from version 3.0. We support it from 3.0 until python.org officially removes it.
+
+### I am getting the issue "batch file cannot be found" while installing python
+
+You can ignore it. It's just calling pyenv rehash command before creating the bat file on some devices.
+
+### System is stuck while uninstalling a python version
+
+Navigate to the location where you installed pyenv, open its 'versions' folder (usually `%USERPROFILE%\.pyenv\pyenv-win\versions`), and delete the folder of the version you want removed.
+
+### How to uninstall pyenv-win installed via pip?
+
+Follow the pip instructions in [How to update pyenv](https://github.com/pyenv-win/pyenv-win#how-to-update-pyenv) and then run `pip uninstall pyenv-win`
+
+### pyenv-win is not recognised, but I have set the PATH environment variable
+
+According to Windows documentation, when adding a path under the User variable you need to logout and login again, in order to reflect any change. For the System variable it's not required.
