@@ -4,6 +4,8 @@ pyenv is a great tool. We have ported it to Windows.
 
 To install pyenv-win, please refer to the [Readme](https://github.com/pyenv-win/pyenv-win#readme).
 
+**Note:** If pictures are not displayed on this page *(after switching between GitHub tabs)*, please refresh the page (F5).
+
 ## Troubleshooting / FAQ
 
 ### How to verify that I have set up pyenv-win correctly?
@@ -30,7 +32,7 @@ To install pyenv-win, please refer to the [Readme](https://github.com/pyenv-win/
     ```
 
     Both **pyenv-win**'s rows at the top of command's output.
-    If not, see [Configure the order of PATH variable](#configure-the-order-in-path-variable) below.
+    If not, see [Configure the order in PATH variable](#configure-the-order-in-path-variable) below.
 
 ### Configure the order in PATH variable
 
@@ -39,7 +41,7 @@ To install pyenv-win, please refer to the [Readme](https://github.com/pyenv-win/
       - Open ***Advanced System Properties***:
       - Win + R and run `systempropertiesadvanced`
       - Click on ***Environment Variables..***. button
-      - Select **Path** in **User variables** table and click on **Edit...** button
+      - Select **Path** in *User variables* table and click on **Edit...** button
       - Find and select two pyenv-win's rows and move them up clicking **Move Up** button (each row you have to move separately)
       - Click **OK** button twice and RESTART (open new) shell terminal window (terminal).
 
